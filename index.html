@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          id="logo"
+          src="/images/Blue Complex Cloud Logo.png"
+          alt="weather
+        logo"
+          ;
+        />
+      </header>
+      <div id="application">
+        <section>
+          <form id="search-form">
+            <input
+              class="city"
+              id="city-search"
+              type="search"
+              placeholder="Enter your city"
+              required
+            />
+            <input class="search-button" type="submit" value="Search" />
+          </form>
+        </section>
+        <div class="current-weather">
+          <div class="current-conditions">
+            <h1 id="city-heading"></h1>
+            <h3><span id="time"></span><span id="description"></span></h3>
+            <p>
+              Humidity:
+              <span class="current-condition-data" id="humidity"></span>, Wind:
+              <span class="current-condition-data" id="wind"></span>
+            </p>
+          </div>
+          <div class="current-temp-container">
+            <div id="icon">
+            </div>
+            <div id="current-temp"></div>
+            <div class="temp-unit">°F</div>
+          </div>
+        </div>
+        <footer>
+          Coded by
+          <a href="https://github.com/mrsmrobles" target="_blank"
+            >Madison Robles</a
+          >
+          is open sourced on
+          <a href="https://github.com/" target="_blank">GitHub</a> and hosted on
+          <a
+            href="https://www.netlify.com/?qgad=669861900644&qgterm=netlify&utm_source=google&utm_term=netlify&utm_campaign=GS_Connect:+Netlify+Brand&utm_medium=paid_search&hsa_acc=3888979506&hsa_cam=20355763121&hsa_grp=154990107550&hsa_ad=669861900644&hsa_src=g&hsa_tgt=kwd-309804753741&hsa_kw=netlify&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAwbitBhDIARIsABfFYIL0vBDY4iByOMOLn0VKcP_ZuCrT7VJbfVYKbWBr4bkv2ZOnely0a7waAvdEEALw_wcB"
+            target="_blank"
+            >Netlify</a
+          >
+        </footer>
+      </div>
+    </main>
+    <script src="src/script.js"></script>
+  </body>
+</html>
