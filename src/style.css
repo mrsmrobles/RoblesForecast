@@ -93,11 +93,10 @@ input.city,
 }
 
 .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
+  width: 60px;
+  height: 60px;
   display: block;
   margin: 0 auto;
-  font-size: 60px;
   text-align: center;
 }
 .weather-forecast-temperatures {
