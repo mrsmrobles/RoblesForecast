@@ -19,6 +19,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${Math.round(wind)} mph`;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let hours = date.getHours();
@@ -60,9 +62,14 @@ function handleSearch(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
-searchCity("San Diego");
+function getForecast(city) {
+  let apiKey = "0afcd2ao9bb24495ta6dd7a01113764b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -86,4 +93,4 @@ function displayForecast() {
   });
   forecastElement.innerHTML = forecastHtml;
 }
-displayForecast();
+searchCity("San Diego");

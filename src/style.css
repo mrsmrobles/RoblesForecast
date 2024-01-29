@@ -65,6 +65,12 @@ input.city,
   background-color: #9667cb32;
   box-shadow: 2px 5px 7px rgba(114, 114, 114, 0.41);
 }
+.search-button:active {
+  box-shadow: 2px 2px 5px #d7819c;
+}
+.search-button:hover {
+  background-color: #52307a32;
+}
 .current-condition-data {
   color: #ad71c2;
   font-weight: bold;
@@ -96,7 +102,7 @@ input.city,
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #d7819c;
   margin-top: 10px;
   display: flex;
   justify-content: center;
