@@ -5,7 +5,7 @@ body {
     rgb(232, 135, 138) 0%,
     rgb(139, 102, 241) 100%
   );
-  height: 700px;
+  height: 800px;
   margin: 0;
 }
 
@@ -112,6 +112,7 @@ input.city,
 }
 #logo {
   height: 60px;
+  margin: 20px 20px;
 }
 #current-temp {
   font-size: 60px;
